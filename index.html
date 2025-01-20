@@ -11,7 +11,6 @@
     <h1>Simulador de Crédito</h1>
     <p>Introduce los datos para calcular tu crédito y consulta el historial.</p>
 
-    <!-- Formulario para simular crédito -->
     <div id="form-simulador">
         <h2>Simula tu crédito</h2>
         <form id="simuladorForm">
@@ -28,26 +27,17 @@
         </form>
     </div>
 
-    <!-- Sección para mostrar resultados -->
     <div id="resultado"></div>
 
-    <!-- Historial de créditos -->
+    <div id="interaccion">
+        <h2>Filtrar créditos</h2>
+        <input type="number" id="buscarCredito" placeholder="Filtrar por monto mínimo">
+        <button id="ordenarCredito">Ordenar por monto</button>
+    </div>
+
     <div id="historial">
         <h2>Historial de Créditos</h2>
         <ul id="listaHistorial"></ul>
-    </div>
-
-    <!-- Formulario para búsqueda -->
-    <div id="form-busqueda">
-        <h2>Buscar créditos por monto</h2>
-        <form id="busquedaForm">
-            <label for="minMonto">Monto mínimo:</label>
-            <input type="number" id="minMonto" required><br>
-            <label for="maxMonto">Monto máximo:</label>
-            <input type="number" id="maxMonto" required><br>
-            <button type="submit">Buscar</button>
-        </form>
-        <ul id="resultadosBusqueda"></ul>
     </div>
 
     <script src="js/miarchivo.js"></script>

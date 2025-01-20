@@ -1,9 +1,6 @@
 
-
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #f4f4f9;
     color: #333;
     text-align: center;
@@ -13,49 +10,32 @@ h1 {
     background-color: #4CAF50;
     color: white;
     padding: 20px 0;
-    margin: 0;
-}
-
-p {
-    margin: 20px 0;
-    font-size: 18px;
 }
 
 button {
     background-color: #4CAF50;
     color: white;
-    border: none;
     padding: 10px 20px;
-    font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
 }
 
-button:hover {
-    background-color: #45a049;
-}
-
-#resultado {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-    text-align: left;
+#interaccion {
+    margin: 20px auto;
+    padding: 15px;
     width: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-#resultado h2 {
-    margin-top: 0;
-    color: #4CAF50;
+#buscarCredito {
+    padding: 10px;
+    width: 60%;
+    font-size: 16px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 5px 0;
+#ordenarCredito {
+    padding: 10px 20px;
+    margin-left: 10px;
 }
