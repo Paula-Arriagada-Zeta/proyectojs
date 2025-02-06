@@ -1,41 +1,115 @@
-
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1C1C1C, #343A40);
+    color: white;
     text-align: center;
 }
 
-h1 {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px 0;
+/* Contenedor principal */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Títulos */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #F8F9FA;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #FFD700;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #F8F9FA;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 400px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    background: #F8F9FA;
+    color: black;
+}
+
+/* Botones */
 button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
+    background: #FFD700;
+    color: black;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
+    margin-top: 15px;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
-#interaccion {
-    margin: 20px auto;
-    padding: 15px;
-    width: 50%;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+button:hover {
+    background: #FFC107;
+    transform: scale(1.05);
+}
+
+/* Secciones */
+.section {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
     border-radius: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#buscarCredito {
+/* Lista de historial y resultados */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
     padding: 10px;
-    width: 60%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    margin: 5px 0;
     font-size: 16px;
 }
 
-#ordenarCredito {
-    padding: 10px 20px;
-    margin-left: 10px;
+/* Botón de carga de API */
+.api-button {
+    background: #17A2B8;
+    color: white;
+}
+
+.api-button:hover {
+    background: #138496;
 }
